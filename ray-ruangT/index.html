@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Baju Modern</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+  <!-- Tombol Sidebar Menu -->
+  <button id="openSidebar" class="menu-btn">
+    <i class="ri-menu-line"></i>
+  </button>
+
+  <!-- Tombol Keranjang Belanja -->
+  <button id="cartButton" class="cart-btn">
+    <i class="ri-shopping-cart-2-line"></i>
+    <span id="cartCount" class="cart-count">0</span>
+  </button>
+
+  <!-- Sidebar Menu dari Atas -->
+  <div id="sidebarMenu" class="sidebar-menu">
+    <div class="sidebar-header">
+      <h2 class="logo">MENU</h2>
+      <button id="closeSidebar" class="close-btn">&times;</button>
+    </div>
+
+    <ul class="sidebar-links">
+      <li><a href="#"><i class="ri-home-4-fill"></i> Home</a></li>
+      <li><a href="#"><i class="ri-shirt-fill"></i> Produk</a></li>
+      <li><a href="#"><i class="ri-phone-fill"></i> Kontak</a></li>
+      <li><a href="#"><i class="ri-user-fill"></i> Profil</a></li>
+      <li><a href="#"><i class="ri-settings-3-fill"></i> Admin</a></li>
+    </ul>
+  </div>
+
+  <!-- Sidebar Keranjang Belanja -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h2>Keranjang</h2>
+      <button id="closeCart" class="close-btn">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <p>Total: <span id="cartTotal">Rp 0</span></p>
+      <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Konten Produk -->
+  <main class="content">
+    <h1 class="title">Produk Baju</h1>
+    <div class="product-container" id="productContainer"></div>
+  </main>
+
+</body>
+</html>

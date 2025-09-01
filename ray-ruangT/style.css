@@ -1,0 +1,236 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Tombol Menu */
+.menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1001;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Tombol Keranjang */
+.cart-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1001;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  transform: scale(1.05);
+}
+
+.cart-count {
+  background: #ff4b5c;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+/* Sidebar Menu dari Atas */
+.sidebar-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: top 0.4s ease-in-out;
+  z-index: 1002;
+}
+
+.sidebar-menu.active {
+  top: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Link Sidebar */
+.sidebar-links {
+  list-style: none;
+}
+
+.sidebar-links li {
+  margin: 12px 0;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.sidebar-links a:hover {
+  color: #ff4b5c;
+}
+
+/* Sidebar Keranjang */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  box-shadow: -5px 0 20px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: right 0.4s ease-in-out;
+  z-index: 1003;
+}
+
+.cart-sidebar.active {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-items {
+  margin-top: 15px;
+  max-height: 65%;
+  overflow-y: auto;
+}
+
+.cart-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Produk */
+.content {
+  padding: 100px 20px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.size-select {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.add-cart-btn {
+  background: #ff4b5c;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+  background: #e63946;
+}
