@@ -13,9 +13,9 @@ let cart = [];
 
 // Produk contoh
 const products = [
-  { id: 1, name: "Baju Oversize", price: 120000, image: "images/1.jpg" },
-  { id: 2, name: "Kaos Polos", price: 90000, image: "images/2.jpg" },
-  { id: 3, name: "Hoodie Tebal", price: 200000, image: "images/3.jpg" }
+  { id: 1, name: "baju hitam", price: 80000, image: "images/1.jpg" },
+  { id: 2, name: "baju putih", price: 80000, image: "images/2.jpg" },
+  { id: 3, name: "baju merah", price: 80000, image: "images/3.jpg" }
 ];
 
 const productContainer = document.getElementById('productContainer');
